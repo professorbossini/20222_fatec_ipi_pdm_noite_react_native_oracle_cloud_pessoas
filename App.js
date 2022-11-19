@@ -4,6 +4,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import PessoaAddTela from "./telas/PessoaAddTela";
 import PessoaListTela from "./telas/PessoaListTela";
 
+// import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const Stack = createNativeStackNavigator()
 
@@ -11,13 +13,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="PessoaAdd"
-        screenOptions={{
-          title: "Novo título",
-          headerStyle: {
-            backgroundColor: 'red'
-          }
-        }}>
+        initialRouteName="PessoaAdd">
         <Stack.Screen
           name="PessoaAdd" 
           component={PessoaAddTela}/>
